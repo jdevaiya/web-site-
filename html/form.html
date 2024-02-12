@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>form</title>
+        <script>
+            function conf(){
+               
+                if (confirm("!")) {
+                        txt = "You pressed OK!";
+                } 
+                else {
+                    txt = "You pressed Cancel!";
+                }
+            }
+        </script>
+        <link rel="web site icon" type="jpg" href="E:\SEM 3\program file\Photo\IMG_20231115_231325_120.jpg">
+    </head>
+<style>
+    div{
+        background-color: red;
+        color: black;
+    }
+    .main:hover{
+        background-color: brown;
+        color: red;
+    }
+    .main{
+        scale: 1;
+        background-color: white;
+    }
+</style>
+
+<form> 
+    <fieldset style="box-shadow: 10px  10px 10px red;"><legend>enquery</legend>
+        <div class="main">
+           
+            Name:<input type="Name" name="" placeholder="Name" required=""><br>
+        </div>
+        <div class="main">
+            <label for="Email">Email:</label>
+            <input type="Email"placeholder="Email"><br>
+        </div>
+        <div class="main">
+            Password:
+            <input type="password" placeholder="password"><br>
+            <label for "Gender">Gender:</label>
+            <input type="radio" name="Gender" checked="">male
+            <input type="radio" name="Gender">female<br>
+        </div>
+        <div class="main">
+            Birth date:
+            <input type="date" name="date"><br>
+           Age:<input type="number" name="" min="1" max="100">
+        </div>
+        <div class="main">
+            class:
+            <input type="text" name="class" autofocus="" list="class">
+            <datalist id="class">
+                <option value="4IT1">4IT1</option>
+                <option value="4IT2">4IT2</option>
+                <option value="4CE1">4CE1</option>
+                <option value="4CE2">4CE2</option>
+            </datalist>
+            Subject:<br>
+                <input type="checkbox" id="os" checked="">os<br>
+                <input type="checkbox" id="wt" checked="">wt<br>
+                <input type="checkbox" id="oopu" checked="">oopu<br>
+                <input type="checkbox" id="pp" checked="">pp<br>
+                <input type="checkbox" id="cgm" checked="">cgm<br>
+        </div>
+        <div class="main">
+            Hobbise:<br>
+            <input type="checkbox" name="hobbise[]">Dancing<br>
+            <input type="checkbox" name="hobbise[]">Singing<br>
+            <input type="checkbox" name="hobbise[]" checked="">Gameing<br>
+            <input type="checkbox" name="hobbise[]">Reading <br>
+        </div>
+        <div class="main">
+            Country:
+                <select name="country">
+                <option> please select country</option>
+                <option value="india">india</option>
+                <option value="us">us</option>
+                <option value="uk">uk</option>
+            </select><br>
+        </div>
+        <div class="main">
+            Image:
+            <input type="file" name="image">
+        </div>
+        <div class="main">
+            Address:
+            <input type="text" placeholder="Address"><br>
+            Mobile no:
+            <input type="number" placeholder="mobile no" required=""><br>
+
+        </div>
+        <div class="main">
+            <input type="submit" onclick="conf()">
+            <input type="reset">
+        </div>
+    </fieldset> 
+ </form>
+</html> 

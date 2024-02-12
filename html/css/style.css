@@ -1,0 +1,13 @@
+.main{
+    width: auto;
+    height: auto;
+    background-color: brown;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+.main:hover{
+    height: 300px;
+    background-color: orange;
+    color: brown;
+}
